@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog of Adventures</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+        }
+        
+        .navbar-inverse {
+            background-color: #2c3e50;
+            border-color: #1a242f;
+        }
+        
+        .navbar-inverse .navbar-brand {
+            color: #ecf0f1;
+        }
+        
+        .page-header {
+            margin-top: 50px;
+        }
+        
+        .adventure-section {
+            margin-bottom: 30px;
+        }
+        
+        .adventure-section img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .adventure-section h4 {
+            margin-top: 15px;
+        }
+        
+        .movie-section,
+        .book-section {
+            margin-top: 40px;
+        }
+        
+        .movie-head,
+        .book-head {
+            background-color: #34495e;
+            color: #ecf0f1;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .movie-text,
+        .book-text {
+            padding: 15px;
+            background-color: #ffffff;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+                <a class="navbar-brand" href="#">Adventure Blog</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#travel">Travel</a></li>
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#environment">Environment</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header" id="travel">
+            <h2>Top Adventures</h2>
+        </div>
+
+        <div class="adventure-section">
+            <img src="adventure1.jpg" alt="Adventure 1" class="img-responsive">
+            <h4>Hiking in the Alps</h4>
+            <p class="text-muted">Experience the thrill of hiking in the stunning Alps, where every turn offers a breathtaking view. Perfect for both novice and experienced hikers.</p>
+        </div>
+
+        <div class="adventure-section">
+            <img src="adventure2.jpg" alt="Adventure 2" class="img-responsive">
+            <h4>Safari in the Serengeti</h4>
+            <p class="text-muted">A journey through the vast plains of the Serengeti, where you can witness the majestic wildlife in its natural habitat. A must-do for nature enthusiasts.</p>
+        </div>
+
+        <div class="page-header" id="movies">
+            <h2>Movie Reviews</h2>
+        </div>
+
+        <div class="movie-section">
+            <div class="movie-head" data-toggle="collapse" data-target="#review1">
+                <span class="glyphicon glyphicon-film"></span> Into the Wild
+            </div>
+            <div id="review1" class="collapse">
+                <div class="movie-text">
+                    <h5>Inspiring and Heart-Wrenching <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></h5>
+                    <p>An incredible story of a young man’s journey into the wilderness, exploring the raw beauty of nature while seeking personal freedom.</p>
+                </div>
+            </div>
+
+            <div class="movie-head" data-toggle="collapse" data-target="#review2">
+                <span class="glyphicon glyphicon-film"></span> The Secret Life of Walter Mitty
+            </div>
+            <div id="review2" class="collapse">
+                <div class="movie-text">
+                    <h5>Visually Stunning and Uplifting <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></h5>
+                    <p>This film beautifully captures the essence of adventure and the courage to step out of one's comfort zone.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-header" id="environment">
+            <h2>Environmental News</h2>
+        </div>
+
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-info">
+                <h4>Protecting the Rainforests</h4>
+                <p>The continuous efforts in protecting rainforests are crucial for maintaining biodiversity and combating climate change.</p>
+            </li>
+            <li class="list-group-item list-group-item-danger">
+                <h4>Ocean Clean-up Initiatives</h4>
+                <p>Innovative projects are underway to clean our oceans, reducing plastic pollution and preserving marine life.</p>
+            </li>
+        </ul>
+
+        <div class="page-header" id="books">
+            <h2>Books on Adventure</h2>
+        </div>
+
+        <div class="book-section">
+            <div class="book-head" data-toggle="modal" data-target="#book1">
+                <span class="glyphicon glyphicon-book"></span> Into Thin Air
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="book1" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Into Thin Air</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="book1.jpg" style="height: 300px;" class="img-responsive">
+                            <p>An exhilarating account of the tragic 1996 Mount Everest expedition, highlighting the dangers and allure of high-altitude climbing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-head" data-toggle="modal" data-target="#book2">
+                <span class="glyphicon glyphicon-book"></span> Wild
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="book2" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Wild</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="book2.jpg" style="height: 300px;" class="img-responsive">
+                            <p>A powerful memoir of self-discovery, following the author’s solo hike along the Pacific Crest Trail.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="about-me" class="container my-5 page-header">
+
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="profile-picture.jpeg" alt="Author's Picture" class="img-fluid rounded-circle" />
+                </div>
+                <div class="col-md-8">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Sheetla, a passionate traveler and blogger. I started this blog to share my experiences and insights from my journeys around the world.</p>
+                    <p>With a background in Programming, I aim to provide useful travel tips, destination reviews, and personal stories that inspire and help fellow travelers.</p>
+                    <p>On this blog, you'll find posts about travel, movie, books along with detailed guides and personal anecdotes. I hope you find my posts enjoyable and helpful for your own travels!</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
